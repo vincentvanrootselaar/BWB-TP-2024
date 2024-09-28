@@ -78,38 +78,37 @@
 			
 	<div class="slider w-full">
     <!-- Slide 1 -->
-    <div class="slide w-full" >
+    <div class="slide w-full " >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_1' ); ?>' alt="Photo1"/>
-      <h1 class="text-6xl font-bold text-blue-600 absolute top-0 left-0 right-0 p-4 text-center">
+      <h1 class="text-6xl font-bold text-blue-600 absolute bottom-0 left-1.5 right-2 text-left">
         <?php echo get_theme_mod( 'crsl_txt_1'); ?>
       </h1>
     </div>
     <!-- Slide 2 -->
     <div class="slide" >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_2' ); ?>' alt="Photo2"/>
-      <h1 class="text-6xl font-bold text-blue-600 absolute top-0 left-0 right-0 p-4 text-center">
+      <h1 class="text-6xl font-bold text-blue-600 absolute bottom-0 left-1.5 right-2 text-left">
         <?php echo get_theme_mod( 'crsl_txt_2'); ?>
       </h1>
     </div>
 	<!-- Slide 3 -->
     <div class="slide" >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_3' ); ?>' alt="Photo3"/>
-      <h1 class="text-6xl font-bold text-blue-600 absolute top-0 left-0 right-0 p-4 text-center">
+      <h1 class="text-6xl font-bold text-blue-600 absolute bottom-0 left-1.5 right-2 p-4 text-left">
         <?php echo get_theme_mod( 'crsl_txt_3'); ?>
       </h1>
     </div>
 	
 
 	<button class="btn-slide prev"><i class="fas fa-solid fa-circle-chevron-left text-4xl text-gray-700"></i></button>
-        <button class="btn-slide next"><i class="fas fa-solid fa-circle-chevron-right text-4xl text-gray-700"></i></button>
+	<button class="btn-slide next"><i class="fas fa-solid fa-circle-chevron-right text-4xl text-gray-700"></i></button>
       
     </div>
-	
+
     <div class="dots-container">
             <span class="dot active" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
             <span class="dot" data-slide="2"></span>
-      <span class="dot" data-slide="3"></span>
     </div>
 
 		

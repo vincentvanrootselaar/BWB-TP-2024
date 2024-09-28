@@ -43,14 +43,14 @@
 .relative {
     position: relative
 }
-.left-0 {
-    left: 0px
+.bottom-0 {
+    bottom: 0px
 }
-.right-0 {
-    right: 0px
+.left-1 {
+    left: 0.25rem
 }
-.top-0 {
-    top: 0px
+.right-1 {
+    right: 0.25rem
 }
 .-m-4 {
     margin: -1rem
@@ -243,6 +243,9 @@
 .py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem
+}
+.text-left {
+    text-align: left
 }
 .text-center {
     text-align: center
