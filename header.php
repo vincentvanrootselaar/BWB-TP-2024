@@ -70,15 +70,15 @@
 		</div>
 	</header>
 
-	<div id="content" class="site-content flex-grow">
+	<div id="content" class="site-content flex-grow w-full">
 
 		<?php if ( is_front_page() ) { ?>
 			 <!-- Start Photo Carousel -->
 			
 			
-	<div class="slider">
+	<div class="slider w-full">
     <!-- Slide 1 -->
-    <div class="slide" >
+    <div class="slide w-full" >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_1' ); ?>' alt="Photo1"/>
       <h1 class="text-6xl font-bold text-blue-600 absolute top-0 left-0 right-0 p-4 text-center">
         <?php echo get_theme_mod( 'crsl_txt_1'); ?>
