@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .angled-button {
-  height: 80px;
+  
   position: relative;
   background-color: #d5002b; /* Red color */
   color: white;
@@ -46,7 +46,7 @@ header {
 }
 
 header.shrink {
-  height: 40px; /* Height when scrolled */
+  height: 90%; /* Height when scrolled */
 }
 
 .slide{ 

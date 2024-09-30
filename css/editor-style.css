@@ -426,10 +426,6 @@ body {
     --tw-bg-opacity: 1;
     background-color: rgb(29 78 216 / var(--tw-bg-opacity))
 }
-.hover\:bg-red-600:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(220 38 38 / var(--tw-bg-opacity))
-}
 .group:hover .group-hover\:block {
     display: block
 }

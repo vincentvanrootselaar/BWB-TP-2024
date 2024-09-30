@@ -915,7 +915,7 @@ video {
   color: #4b5563;
 }
 .angled-button {
-  height: 80px;
+  
   position: relative;
   background-color: #d5002b; /* Red color */
   color: white;
@@ -953,7 +953,7 @@ header {
   
 }
 header.shrink {
-  height: 40px; /* Height when scrolled */
+  height: 90%; /* Height when scrolled */
 }
 .slide{ 
   position: absolute;
@@ -1009,10 +1009,6 @@ background:#272727;
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-.hover\:bg-red-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 .group:hover .group-hover\:block {
   display: block;
