@@ -9,12 +9,6 @@ window.addEventListener('load', function () {
             main_navigation.classList.toggle('hidden');
       });
 
-
-
-      
-
-
-
 // Slide
 function Slider() {
   const carouselSlides = document.querySelectorAll('.slide');
@@ -60,5 +54,29 @@ function Slider() {
   });
 };
 Slider();
+
+
+//When Header is on top
+window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    if (window.scrollY > 1) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 

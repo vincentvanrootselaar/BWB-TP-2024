@@ -63,6 +63,16 @@ window.addEventListener('load', function () {
   }
   ;
   Slider();
+
+  //When Header is on top
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    if (window.scrollY > 1) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
 });
 
 /***/ }),

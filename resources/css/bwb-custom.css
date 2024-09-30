@@ -2,30 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.skewed-button {
-  
-  border: none;
-  padding: 10px 20px;
-  background-color: #ff00d4;
+.angled-button {
+  height: 80px;
+  position: relative;
+  background-color: #d5002b; /* Red color */
   color: white;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 18px;
+  
+  text-align: center; /* Centers the text horizontally */
+  border: none;
   cursor: pointer;
+
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%); /* Straight edges initially */
+  transition: background-color 0.3s ease, clip-path 0.3s ease;
+}
+
+.angled-button:hover {
+  
+  background-color: #b30024; /* Darken color on hover */
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); /* Creates the angled bottom */
   
 }
 
-.skewed-button:hover::after {
-  content: "";
-  display: block;
-  height: 70%;
-  width: 100%;
-  transform: skewY(10deg);
-  background-color: inherit;
-  position: absolute;
-  bottom: -13px;
-  left: 0;
-  z-index: -1;
-  transition: transform 0.3s ease-in-out;
-}
 
 .slider{
   position: relative;
@@ -34,6 +34,21 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  transition: height 0.3s ease; /* Smooth transition for height change */
+  
+}
+
+header.shrink {
+  height: 40px; /* Height when scrolled */
+}
+
 .slide{ 
   position: absolute;
   top:0;
