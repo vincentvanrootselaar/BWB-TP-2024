@@ -914,27 +914,40 @@ video {
   font-size: 0.875rem;
   color: #4b5563;
 }
-.angled-button {
+.angled-button:hover::before {
+  top: 0;
   
+}
+.angled-button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2ecc71;
+  
+  transition: top 0.5s ease-in-out;
+  z-index: -1;
+  padding: 0;
+}
+.angled-button {
+  z-index: 2;
   position: relative;
-  background-color: #d5002b; /* Red color */
-  color: white;
+  background-color: pink; /* Red color */
+  color: black;
   padding: 15px 30px;
   font-size: 18px;
-  
   text-align: center; /* Centers the text horizontally */
   border: none;
   cursor: pointer;
 
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%); /* Straight edges initially */
-  transition: background-color 0.3s ease, clip-path 0.3s ease;
+  
+  transition: background-color 0.3s ease,clip-path 0,3s ease-in;
 }
-.angled-button:hover {
-  
-  background-color: #b30024; /* Darken color on hover */
-
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); /* Creates the angled bottom */
-  
+.angled-button:hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); /* Creates the angled bottom */
 }
 .slider{
   position: relative;
@@ -946,14 +959,26 @@ video {
 header {
   position: sticky;
   top: 0;
+  
   background-color: #fff;
   z-index: 100;
   width: 100%;
   transition: height 0.3s ease; /* Smooth transition for height change */
   
+  
+  
 }
 header.shrink {
   height: 90%; /* Height when scrolled */
+  
+  
+}
+.headerbckgrnd{
+  opacity: 0.5;
+}
+.headerbckgrnd.shrink
+{
+  opacity: 0.5;
 }
 .slide{ 
   position: absolute;
@@ -964,6 +989,7 @@ header.shrink {
   align-items: center;
   justify-content: center;
   transition: transform 1s;
+  
 }
 .slide > img{
   width: 100%;
