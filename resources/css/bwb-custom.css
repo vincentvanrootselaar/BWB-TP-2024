@@ -39,6 +39,9 @@
 .angled-button:hover{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); /* Creates the angled bottom */
 }
+.angled-button:active{
+  background-color: yellow;
+}
 
 
 
@@ -87,6 +90,14 @@ header.shrink {
   justify-content: center;
   transition: transform 1s;
   
+}
+.slide h1 {
+  z-index: 10; /* Ensure text appears above image */
+  position: absolute;
+  left: 5rem; /* Adjust this value for left alignment */
+  right: 2rem;  /* Adjust this value for right alignment */
+  bottom: 6rem; /* Optionally adjust this to control vertical positioning */
+  text-align: left; /* Control text alignment */
 }
 .slide > img{
   width: 100%;

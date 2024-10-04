@@ -56,7 +56,7 @@
 				wp_nav_menu(
 					array(
 						'container_id'    => 'primary-menu',
-						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block headerbckgrnd',
 						'menu_class'      => 'lg:flex lg:-mx-4',
 						'theme_location'  => 'primary',     
 						'li_class_0'      => 'lg:mx-4 lg:relative group angled-button',
@@ -76,25 +76,25 @@
 			 <!-- Start Photo Carousel -->
 			
 			
-	<div class="slider w-full">
+	<div class="slider w-full relative">
     <!-- Slide 1 -->
-    <div class="slide w-full " >
+    <div class="slide relative" >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_1' ); ?>' alt="Photo1"/>
-      <h1 class="text-6xl font-bold text-blue-600 absolute bottom-0 left-1.5 right-2 text-left">
+      <h1 class="text-6xl font-bold text-white absolute left-3 text-left">
         <?php echo get_theme_mod( 'crsl_txt_1'); ?>
       </h1>
     </div>
     <!-- Slide 2 -->
-    <div class="slide" >
+    <div class="slide relative" >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_2' ); ?>' alt="Photo2"/>
-      <h1 class="text-6xl font-bold text-blue-600 absolute bottom-0 left-1.5 right-2 text-left">
+      <h1 class="text-6xl font-bold text-white absolute left-1.5 right-2 text-left">
         <?php echo get_theme_mod( 'crsl_txt_2'); ?>
       </h1>
     </div>
 	<!-- Slide 3 -->
-    <div class="slide" >
+    <div class="slide relative" >
 		<img src= '<?php echo get_theme_mod( 'crsl_img_3' ); ?>' alt="Photo3"/>
-      <h1 class="text-6xl font-bold text-blue-600 absolute bottom-0 left-1.5 right-2 p-4 text-left">
+      <h1 class="text-6xl font-bold text-white absolute left-1.5 right-2 p-4 text-left">
         <?php echo get_theme_mod( 'crsl_txt_3'); ?>
       </h1>
     </div>

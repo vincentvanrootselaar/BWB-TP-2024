@@ -511,14 +511,14 @@ video {
 .sticky{
     position: sticky;
 }
-.bottom-0{
-    bottom: 0px;
-}
 .left-1{
     left: 0.25rem;
 }
 .left-1\.5{
     left: 0.375rem;
+}
+.left-3{
+    left: 0.75rem;
 }
 .right-2{
     right: 0.5rem;
@@ -777,10 +777,6 @@ video {
     --tw-text-opacity: 1;
     color: rgb(59 130 246 / var(--tw-text-opacity));
 }
-.text-blue-600{
-    --tw-text-opacity: 1;
-    color: rgb(37 99 235 / var(--tw-text-opacity));
-}
 .text-gray-300{
     --tw-text-opacity: 1;
     color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -910,6 +906,9 @@ video {
 .angled-button:hover{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); /* Creates the angled bottom */
 }
+.angled-button:active{
+  background-color: yellow;
+}
 .slider{
   position: relative;
    max-width: 100%; 
@@ -951,6 +950,14 @@ header.shrink {
   justify-content: center;
   transition: transform 1s;
   
+}
+.slide h1 {
+  z-index: 10; /* Ensure text appears above image */
+  position: absolute;
+  left: 5rem; /* Adjust this value for left alignment */
+  right: 2rem;  /* Adjust this value for right alignment */
+  bottom: 6rem; /* Optionally adjust this to control vertical positioning */
+  text-align: left; /* Control text alignment */
 }
 .slide > img{
   width: 100%;
