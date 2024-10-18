@@ -46,20 +46,17 @@
 .sticky {
     position: sticky
 }
-.bottom-2 {
-    bottom: 0.5rem
-}
 .left-1 {
     left: 0.25rem
 }
 .left-1\.5 {
     left: 0.375rem
 }
-.right-2 {
-    right: 0.5rem
-}
 .left-3 {
     left: 0.75rem
+}
+.right-2 {
+    right: 0.5rem
 }
 .-m-4 {
     margin: -1rem
@@ -314,10 +311,6 @@
 .text-blue-500 {
     --tw-text-opacity: 1;
     color: rgb(59 130 246 / var(--tw-text-opacity))
-}
-.text-blue-600 {
-    --tw-text-opacity: 1;
-    color: rgb(37 99 235 / var(--tw-text-opacity))
 }
 .text-gray-300 {
     --tw-text-opacity: 1;
