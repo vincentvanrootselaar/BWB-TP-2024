@@ -871,6 +871,13 @@ video {
     font-size: 0.875rem;
     color: #4b5563;
 }
+.mobile-menu{
+  background-color: aqua;
+}
+.mobile-button{
+
+  background-color: black;
+}
 .angled-button:hover::before {
   top: 0;
   
@@ -910,33 +917,6 @@ video {
 }
 .angled-button:active{
   background-color: yellow;
-}
-/* Media query for small screens (max-width: 1024px for Tailwind's lg breakpoint) */
-@media (max-width: 1024px) {
- 
-
-  /* Reset the fancy styles and apply mobile-friendly styles */
-  .angled-button {
-    all: unset; /* Remove all previously defined styles */
-    background-color: #333; /* Dark background for mobile buttons */
-    color: #fff; /* White text for contrast */
-    padding: 15px 0; /* Enough padding for mobile buttons */
-    width: 100%; /* Make the buttons full width */
-    text-align: center; /* Center the text horizontally */
-    font-size: 18px; /* A comfortable font size for mobile */
-    display: block; /* Ensure block-level elements */
-    margin: 10px 0; /* Add spacing between buttons */
-    border-radius: 5px; /* Slight rounded corners for a modern look */
-    cursor: pointer; /* Show the pointer on hover */
-  }
-
-  .angled-button:hover {
-    background-color: #555; /* Slightly darker background on hover */
-  }
-
-  .angled-button:active {
-    background-color: #777; /* A different shade when pressed */
-  }
 }
 .slider{
   position: relative;

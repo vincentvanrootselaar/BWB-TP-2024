@@ -7,7 +7,11 @@ window.addEventListener('load', function () {
       document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
             e.preventDefault();
             main_navigation.classList.toggle('hidden');
+            main_navigation.classList.toggle('mobile-menu');
+            main_navigation.classList.toggle('mobile-button');
       });
+
+      
 
 // Slide
 function Slider() {
@@ -59,6 +63,7 @@ Slider();
 //When Header is on top
 window.addEventListener("scroll", function() {
     var header = document.querySelector("header");
+    var headerbckgrnd = document.querySelector("headerbckgrnd");
     if (window.scrollY > 1) {
         header.classList.add("shrink");
     } else {

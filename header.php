@@ -59,7 +59,7 @@
 						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block headerbckgrnd',
 						'menu_class'      => 'lg:flex lg:-mx-4',
 						'theme_location'  => 'primary',     
-						'li_class_0'      => 'lg:mx-4 lg:relative group angled-button',
+						'li_class_0'      => 'lg:mx-4 lg:relative group angled-button mobile-button',
 						'li_class_1'	  => 'text-gray-800 hover:text-black-700',
 						'submenu_class'	  => 'lg:hidden group-hover:block lg:absolute lg:right-0 lg:rounded lg:w-48 lg:max-w-xl bg-gray-200 p-4 block',
 						'fallback_cb'     => false,
